@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#210d17">
+  <title>For Nelly, With Love ❤️ </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="topline"><span>MADE WITH LOVE</span><span>✦</span><span>JUST FOR YOU</span></div>
+
+  <main>
+    <!-- SCENE 1: CAKE -->
+    <section class="scene active" id="cakeScene" aria-labelledby="cakeTitle">
+      <div class="eyebrow">A LITTLE BIRTHDAY MAGIC</div>
+      <h1 id="cakeTitle">Today is all about <em>you.</em></h1>
+      <p class="intro">I made you a little something. But first, close your eyes, make a wish, and get ready…</p>
+      <div class="cake-wrap">
+        <div class="cake-glow"></div>
+        <div class="cake">
+          <div class="candle">
+            <div class="flame" id="flame"></div>
+            <div class="wick"></div>
+            <div class="candle-body"></div>
+          </div>
+          <div class="icing-drip"></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"><span class="cake-dot"></span><span class="cake-dot"></span><span class="cake-dot"></span><span class="cake-dot"></span><span class="cake-dot"></span></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+        <div class="cake-sparkle s1">✦</div><div class="cake-sparkle s2">✧</div><div class="cake-sparkle s3">✦</div>
+      </div>
+      <p class="instruction" id="blowInstruction">Make a wish, then blow out your candle.</p>
+      <div class="button-row">
+        <button class="button primary" id="blowButton">Blow out the candle <span>↗</span></button>
+        <button class="button quiet" id="micButton">Use my microphone</button>
+      </div>
+      <p class="tiny-note" id="micStatus">No microphone needed — you can simply tap the button.</p>
+    </section>
+
+    <!-- SCENE 2: ENVELOPE -->
+    <section class="scene" id="envelopeScene" aria-labelledby="envelopeTitle">
+      <div class="eyebrow">WISH MADE ✦</div>
+      <h1 id="envelopeTitle">One little thing <em>for you.</em></h1>
+      <p class="intro">And now, birthday boy… there's something waiting for you.</p>
+      <button class="envelope-button" id="openEnvelope" aria-label="Open your birthday envelope">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-peek"><span>For Nelson</span><small>with all my love</small></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">N<span>♥</span></div>
+        </div>
+        <span class="envelope-cta">CLICK TO OPEN YOUR ENVELOPE <span>↗</span></span>
+      </button>
+      <p class="tiny-note">Go on. It's addressed to you.</p>
+    </section>
+
+    <!-- SCENE 3: CARD -->
+    <section class="scene card-scene" id="cardScene" aria-labelledby="cardHeading">
+      <div class="eyebrow">A NOTE FROM MY HEART TO YOURS</div>
+      <div class="gift-card">
+        <div class="photo-side">
+          <div class="photo-heading">little moments, <em>big love.</em></div>
+          <div class="photo-frame">
+            <img id="memoryPhoto" src="photos/photo1.jpg" alt="A favorite memory together">
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <span class="placeholder-heart">♡</span>
+              <strong>Your favorite memories go here</strong>
+              <small>Add your pictures to the photos folder<br>and name them photo1.jpg, photo2.jpg…</small>
+            </div>
+            <span class="photo-label" id="photoCaption">my favorite kind of day</span>
+          </div>
+          <div class="photo-controls"><button id="prevPhoto" aria-label="Previous photo">←</button><span id="photoCount">01 / 05</span><button id="nextPhoto" aria-label="Next photo">→</button></div>
+          <div class="photo-dots" id="photoDots"></div>
+          <div class="photo-side-note">every version of us is a favorite.</div>
+        </div>
+        <div class="message-side">
+          <div class="card-topline"><span>TO MY FAVORITE PERSON</span><span>♥</span></div>
+          <div class="card-content">
+            <p class="script">Happy Birthday, Nelson</p>
+            <h2 id="cardHeading">To the person who makes my world brighter.</h2>
+            <div class="letter-text" id="letterText">
+              <p>Happy birthday, baby. ♡</p>
+              <p>I hope this next chapter brings you so much joy, peace, growth, and all the little things that make you feel loved. You deserve to be celebrated today and every day.</p>
+              <p>I'm grateful for the memories we've made, the laughs we've shared, and all the moments we still get to look forward to. I hope you never forget how special you are to me.</p>
+              <p>Today is your reminder that you are loved, appreciated, and worth making a fuss over. So let yourself be celebrated, birthday boy. This little corner of the internet is all yours.</p>
+              <p class="signoff">Always cheering for you,<br><span>your girl, Ash ♡</span></p>
+            </div>
+          </div>
+          <div class="card-bottom"><span>MADE ESPECIALLY FOR YOU</span><span>✦ 01 ✦</span></div>
+        </div>
+      </div>
+      <button class="button primary next-button" id="toNotes">There's more for you <span>↗</span></button>
+    </section>
+
+    <!-- SCENE 4: LITTLE NOTES -->
+    <section class="scene" id="notesScene" aria-labelledby="notesTitle">
+      <div class="eyebrow">A FEW THINGS I HOPE YOU KNOW</div>
+      <h1 id="notesTitle">Little notes, <em>just for you.</em></h1>
+      <p class="intro">Open each one. They're tiny, but they're yours.</p>
+      <div class="notes-grid">
+        <button class="note-tile" data-note="admire"><span class="note-icon">✦</span><span class="note-label">Something I admire</span><span class="note-hint">tap to open ↗</span></button>
+        <button class="note-tile" data-note="memory"><span class="note-icon">♡</span><span class="note-label">A memory I love</span><span class="note-hint">tap to open ↗</span></button>
+        <button class="note-tile" data-note="wish"><span class="note-icon">☾</span><span class="note-label">A wish for your year</span><span class="note-hint">tap to open ↗</span></button>
+        <button class="note-tile" data-note="future"><span class="note-icon">✉</span><span class="note-label">Something to look forward to</span><span class="note-hint">tap to open ↗</span></button>
+      </div>
+      <button class="button primary" id="toFinal">One last thing… <span>↗</span></button>
+    </section>
+
+    <!-- SCENE 5: FINALE -->
+    <section class="scene" id="finalScene" aria-labelledby="finalTitle">
+      <div class="final-stars" aria-hidden="true">✦　·　✧　　♡　·　✦　　✧</div>
+      <div class="eyebrow">AND BEFORE YOU GO…</div>
+      <div class="final-heart">♥</div>
+      <p class="script final-script">For you, always</p>
+      <h1 id="finalTitle">I hope this year is <em>kind to you.</em></h1>
+      <p class="final-message">May you keep becoming the person you're proud to be. May life surprise you in beautiful ways. And may you always have reasons to smile — including this one.</p>
+      <p class="final-signoff">Happy birthday, my love. ♡</p>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <button class="button primary" id="replay">Experience it again ↻</button>
+      <p class="tiny-note">P.S. There is a gift waiting for you.</p>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="noteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="note-modal">
+      <button class="modal-close" id="closeModal" aria-label="Close note">×</button>
+      <div class="modal-flower">✦</div>
+      <p class="eyebrow">A LITTLE NOTE FOR YOU</p>
+      <h2 id="modalTitle">Something I admire</h2>
+      <p id="modalBody"></p>
+      <button class="button primary" id="modalDone">Keep this one close ♡</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
