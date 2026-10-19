@@ -142,5 +142,78 @@
 
   <div class="toast" id="toast" aria-live="polite"></div>
   <script src="script.js"></script>
+
+
+<!-- MUSIC -->
+  
+<!-- MUSIC -->
+<audio id="backgroundMusic" loop preload="auto">
+  <source src="music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<button
+  id="musicToggle"
+  class="music-toggle"
+  aria-label="Turn music off"
+  aria-pressed="true"
+>
+  ♫ Music on
+</button>
+
+<script>
+  const music = document.getElementById("backgroundMusic");
+  const musicToggle = document.getElementById("musicToggle");
+
+  music.volume = 0.25;
+
+  let musicWasManuallyTurnedOff = false;
+
+  function updateMusicButton() {
+    const isPlaying = !music.paused;
+
+    musicToggle.textContent = isPlaying ? "♫ Music on" : "♫ Music off";
+    musicToggle.setAttribute(
+      "aria-label",
+      isPlaying ? "Turn music off" : "Turn music on"
+    );
+    musicToggle.setAttribute("aria-pressed", String(isPlaying));
+  }
+
+  async function startMusic() {
+    if (musicWasManuallyTurnedOff || !music.paused) return;
+
+    try {
+      await music.play();
+      updateMusicButton();
+    } catch (error) {
+      // Autoplay may be blocked until the visitor interacts.
+      updateMusicButton();
+    }
+  }
+
+  musicToggle.addEventListener("click", async () => {
+    if (music.paused) {
+      musicWasManuallyTurnedOff = false;
+      await startMusic();
+    } else {
+      musicWasManuallyTurnedOff = true;
+      music.pause();
+      updateMusicButton();
+    }
+  });
+
+  // Attempt autoplay when the experience loads.
+  startMusic();
+
+  // If autoplay is blocked, start after the first interaction anywhere.
+  // The capture listener allows this to work with existing scene buttons.
+  document.addEventListener("click", startMusic, {
+    capture: true
+  });
+
+  music.addEventListener("play", updateMusicButton);
+  music.addEventListener("pause", updateMusicButton);
+</script>
+
 </body>
 </html>

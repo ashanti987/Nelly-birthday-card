@@ -125,3 +125,26 @@ h1 em, .photo-heading em { color: var(--rose); font-weight: 400; }
 }
 @media (max-width: 390px) { .cake-wrap { transform: scale(.9); margin: -3px 0 -10px; }.button { padding: 12px 15px; }.notes-grid { grid-template-columns: 1fr; }.note-tile { min-height: 100px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+
+
+.music-toggle {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1000;
+  padding: 11px 18px;
+  border: 1px solid #D8B56D;
+  border-radius: 30px;
+  background: rgba(7, 23, 37, 0.92);
+  color: #D8B56D;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.music-toggle:hover {
+  background: #245B79;
+  transform: translateY(-2px);
+}

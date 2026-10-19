@@ -153,7 +153,7 @@ const notes = {
   },
   future: {
     title: "Something to look forward to",
-    body: "More dates, more laughs, more tennis, more hot steamy sex 😏, more little traditions, and more memories we haven't made yet. let's go mannnnnnnnnn ♡"
+    body: "More dates, more laughs, more tennis, more hot steamy sex 😏, and more memories we haven't made yet. let's go mannnnnnnnnn ♡"
   }
 };
 
