@@ -5,7 +5,7 @@ A responsive, interactive birthday-card website built with plain HTML, CSS, and 
 ## Run it in VS Code
 
 1. Unzip this folder.
-2. Open the `jay_birthday_experience` folder in VS Code.
+2. Open the `nelly_birthday_experience` folder in VS Code.
 3. Open `index.html` in a browser. Recommended: install the **Live Server** extension in VS Code, right-click `index.html`, then choose **Open with Live Server**.
 4. Test the flow from the cake through the envelope, card, notes, and finale.
 
